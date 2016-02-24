@@ -1,0 +1,255 @@
+/*
+   Cycle Pathology Website
+   Style Sheet
+   
+   Author: Trevor Bowling
+   Date:   2 February 2016
+
+   Filename:         cp_styles.css
+   Supporting Files: atwood.png, bike_bg.png, rawlings.png
+
+*/
+
+body {
+	background-color: black;
+	background-image: url(../images/bike_bg.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	
+	width: 95%;
+	min-width: 1000px;
+	max-width: 1400px;
+	
+	position: relative;
+}
+
+	/* general Navigation List Style */
+/* ============================= */
+nav a {text-decoration: none;} /* remove all underlines for child links in nav section */
+
+/* Create Horizontal Navigation List by mapiulating bullet list elements */
+nav.horizontalNAV  li {
+	font-size: 87.5%; /* 87.5% of the default browser's fon size */
+	float: left; /* float each list element to the left of the screen */
+	width: 20%; /* set width of each list item to 20% of the total width of the nav section;
+					by default, the width of nav element is equal to the width of the page body;
+					so the 5 links will be equally spaced across the browser window */
+	text-align: center; /* enter text of each hyperlink within each link element's box */
+
+	padding: 15px 0px 15px 0px; /* set padding for top left bottom right */
+}
+
+/* Set styles for links used in list elements that are part of the horizontalNAV Class */
+nav.horizontalNAV li a {
+	color: rgb(255, 255, 99) /* display unvisited links in yellow color */
+	
+}
+
+nav.horizontalNAV li a:hover {
+	color: white; /* display link that is hovered upon in white color */
+	
+}
+
+nav.horizontalNAV {
+	margin-left: 33%; /* offset the nav link from left edge by 33% of the total page width */
+	width: 66%; /* resize the nav list to 66% of the total page width */
+	
+}
+
+/* President's Message */
+#president {
+	background-color: rgba(255, 255, 255, 0.3); /* set background to white with only 0.3 opaque */
+	clear: left; /* don't want the navigation link on the left; left must be clear */
+	float: left; 
+	width: 40%; /* set width 40% of the page width */
+	margin-left: 33%; /* offset message from left edge by 33% of the total page width */
+	
+	background-image: url(../images/atwood.png);
+	background-position: bottom right;
+	background-repeat: no-repeat; /* show one image only */
+	
+	border-radius: 30px;
+	
+}
+
+#president h1 {
+	font-family: 'Lucida Calligraphy', 'Apple Chancery', cursive; /* notice the 3 choices */
+	font-size: 158%; /* 158% of default browser's text size */
+	font-weight: bold; 
+	margin: 10px 0px 0px 10px; /* clockwise from top */
+	
+}
+
+#president h2 {
+	font-size: 105%; /* 105% of browser's default tax size */
+	font-weight: bold;
+	margin: 0px 0px 10px 15px; /* clockwise form top */
+	
+}
+
+#president p {
+	font-size: 87.5%; /* 87.5% of the default */
+	margin: 0px 40% 20px 15px; /* notice size of right margin; it is 40% of the width
+							of the containing message box and not the whole page */
+}
+
+/* Vertical navigation List */
+nav.verticalNAV {
+	float: left; /* float left of the page and runs smack into the message box */
+	margin-left: 3%; /* left margin betwen message box and image is 3% of the entire page width */
+	width: 23%; /* width is 23% of trhe page width */
+	
+}
+
+/* Style links of Vertical Navigation List */
+nav.verticalNAV a {
+	color: rgb(182, 182, 92); /* pale yellow color */
+	line-height: 2.2em; /* spread the links vertically */
+	
+	border-bottom: 1px solid rgb(182, 182, 92);
+	display: block; /* becomes a block element thus box extends as far as parent's width */
+	
+}
+
+/* Story Section Styles */
+/* ==================== */
+#story {
+	background-color: rgba(255,255,255,0.8);
+	clear: left; /* prevent moving it up left of verticalNAV that was floated left */
+	float: left; /* float itself to left of page */
+	margin: 20px 0px 0px 33%; /* note left margin pushes it from left edge 33% of the page width */
+	width: 66%; /* width is 66% of entire page width */
+	
+}
+
+/* Article Styles */
+#story article {
+	border-right: 1px solid black;
+	float: left; /* float left within the parent story section */
+	width: 50%; /* width is half the parent story section */
+	
+}
+
+/* Article Header Styles */
+#story article hgroup {
+	background-color: rgb(93, 30, 2); /* light brown color */
+	background-image: yrl(../images/rawlings.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	height: 90px;
+	color: rgba(255, 255, 255, 0.3);
+	text-indent: 10px; /* indent text of heading group */
+	
+}
+
+#story article hgroup h1 {
+	font-size: 150%;
+	letter-spacing: 3px; /* set space between each letter */
+	
+}
+
+#story article hgroup h2 {
+	font-size: 105%;
+	
+}
+
+#story article p {
+	font-size: 80%;
+	margin: 10px 10px 10px 10px;
+	
+}
+
+#story article ul li {
+	font-size: 80%;
+	margin: 15px 25px 15px 25px;
+	
+}
+
+#story article ul li strong {
+	font-weight: bold;
+	
+}
+
+/* Figure Box Styles */
+#story figure {
+	float: left;
+	width: 49%; /* half of the width of story section */
+	
+}
+
+#story figure img {
+	border: 5px 5px 5px 5px;
+	border-color: rgb(227, 168, 145); /* light brown color */
+	border-style: inset;
+	display: block; /* change inline img to block */
+	margin: 30px auto 10px auto; /* auto for right and left margin means '
+									center the figure horizontally in box */
+	width: 80%; /* center it within figure box */
+	
+}
+
+#stor figure figcaption {
+	font-size: 75%;
+	font-size: italic;
+	text-align: center; /* center it within figure box */
+	
+}
+
+/* Page Header Styles */
+header {
+	position: absolute;
+	left: 20px; /* x = 20px from the screen's top left */
+	top: 20px; /* y = 20px from the screen's top left */
+	
+}
+
+/* Sidebar styles */
+aside {
+	color: rgb(145, 98, 78); /* light brown font color */
+	position: absolute;
+	left: 10px;
+	top: 400px;
+	width: 30%; /* sidebar is 30% of the browser window width */
+	
+	height: 450px;
+	overflow: auto;
+	
+}
+
+aside h1 {
+	font-size: 105%;
+	font-weight: bold;
+	margin-bottom: 25px;
+	text-align: center; /* centers the heading within the aside section */
+	
+}
+
+aside h2 {
+	font-size: 85%;
+	font-weight: bold;
+	
+}
+
+aside p {
+	font-size: 75%;
+	
+}
+
+footer {
+	clear: left;
+	margin-left: 33%;
+	width: 66%; /* 66% of the page body and not the browser window */
+	
+}
+
+footer address {
+	color: rgb(182, 182, 92); /* light yellow color */
+	font-size: 80%;
+	font-style: normal;
+	padding-top: 10px;
+	text-align: center;
+	
+}
+
+
+

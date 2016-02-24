@@ -1,0 +1,42 @@
+/*
+   Cycle Pathology Website
+   
+   Reset Style Sheet to replace browser's default styles and
+   this allows designer to start from  known baseline
+   
+   Author: Trevor Bowling
+   Date:   4 February 2016
+   
+   Filename:  cp_reset.css
+   Supporting Files: none
+
+*/
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, section, nav {display: block;}
+
+/* Set the default styles for ALL page elements (*) in body.
+Recall all page elements are descendent of body */
+
+body * {
+	font-family: Verdana, Geneva, sans-serif; /* note 3 choices */
+	font-size: 100%; /* 100% of the parent, that is body */
+	font-weight: inherit; /* inherit parents, that is body */
+	line-height: 1.2em; /* space between line of txt */
+	list-style: none; /* don't show list markers */
+	vertical-align: baseline; /* align with bottom line of lowercase letters in surrounding text */
+	
+	margin: 0px 0px 0px 0px; /* ste top, right, bottom and left margins to opx; note the clockwise direction */
+	padding: 0px 0px 0px 0px; 
+}
+
+
+
+
+
+
+
+
+
+
