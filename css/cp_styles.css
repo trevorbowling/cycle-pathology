@@ -132,8 +132,8 @@ nav.verticalNAV a {
 
 /* Article Header Styles */
 #story article hgroup {
-	background-color: rgb(93, 30, 2); /* light brown color */
-	background-image: yrl(../images/rawlings.png);
+	background-color: rgb(97, 30, 2); /* light brown color */ /*changed to 97*/
+	background-image: url(../images/rawlings.png);/*just a small typo should be url*/
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	height: 90px;
@@ -188,7 +188,7 @@ nav.verticalNAV a {
 	
 }
 
-#stor figure figcaption {
+#story figure figcaption {
 	font-size: 75%;
 	font-size: italic;
 	text-align: center; /* center it within figure box */
